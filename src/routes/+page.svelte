@@ -10,7 +10,13 @@
 </svelte:head>
 
 <section class="main bg-accent">
-  <video autoplay loop muted playsinline class="object-cover w-full h-full">
+  <video
+    autoplay
+    loop
+    muted
+    playsinline
+    class="object-cover w-full h-full max-h-screen"
+  >
     <source src="/videos/bkg-video.webm" type="video/webm" />
     <source src="/videos/bkg-video.mp4" type="video/mp4" />
     <track kind="captions" />
@@ -100,3 +106,8 @@
     </div>
   </article>
 </section>
+<a
+  class="fixed bottom-1 right-4 text-white text-sm opacity-50 hover:opacity-100 transition motion-reduce:transition-none motion-reduce:hover:transform-none"
+  href="https://www.pexels.com/video/waves-rushing-and-splashing-to-the-shore-1409899/"
+  target="_blank">Video by Michal Marek</a
+>
