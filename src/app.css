@@ -25,18 +25,6 @@
   --color-accent: #2a3ffb;
 }
 
-.main {
-  display: grid;
-  grid-template-areas: 'stack';
-  place-items: center;
-  height: 100dvh;
-  width: 100dvw;
-}
-
-.main > * {
-  grid-area: stack;
-}
-
 .bkg-overlay {
   background: linear-gradient(270deg, var(--color-accent), #1b1b1b);
   background-size: 400% 400%;

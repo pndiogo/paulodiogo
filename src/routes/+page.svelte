@@ -9,20 +9,20 @@
   <link rel="preload" href="/videos/bkg-video.mp4" as="video" />
 </svelte:head>
 
-<section class="main bg-accent">
+<section class="main flex items-center justify-center min-h-screen">
   <video
     autoplay
     loop
     muted
     playsinline
     poster="/images/bkg-video-poster.jpg"
-    class="object-cover w-full h-full max-h-screen"
+    class="object-cover h-full w-full fixed inset-0"
   >
     <source src="/videos/bkg-video.webm" type="video/webm" />
     <source src="/videos/bkg-video.mp4" type="video/mp4" />
     <track kind="captions" />
   </video>
-  <div class="bkg-overlay w-full h-full mix-blend-overlay"></div>
+  <div class="bkg-overlay mix-blend-overlay fixed inset-0"></div>
   <article
     class="profile grid grid-cols-5 bg-white shadow-2xl overflow-hidden rounded-md max-w-lg md:max-w-2xl lg:max-w-4xl z-10 m-6"
   >
@@ -38,7 +38,7 @@
     </div>
     <div class="profile-content col-span-5 lg:col-span-3 px-8 pt-5 pb-8">
       <div class="flex items-center gap-4">
-        <picture class="hidden sm:block lg:hidden w-40 h-full">
+        <picture class="shrink-0 hidden sm:block lg:hidden w-1/3 h-full">
           <source srcset="/images/profile.webp" type="image/webp" />
           <img
             class="object-cover w-full h-full rounded-sm"
@@ -108,7 +108,7 @@
   </article>
 </section>
 <a
-  class="fixed bottom-1 right-4 text-white text-sm opacity-50 hover:opacity-100 transition motion-reduce:transition-none motion-reduce:hover:transform-none"
+  class="fixed bottom-2 right-4 text-white text-sm opacity-50 hover:opacity-100 transition motion-reduce:transition-none motion-reduce:hover:transform-none"
   href="https://www.pexels.com/video/waves-rushing-and-splashing-to-the-shore-1409899/"
   target="_blank">Video by Michal Marek</a
 >
