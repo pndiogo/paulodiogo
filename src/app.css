@@ -21,6 +21,10 @@
   font-family: Geist;
 }
 
+:root {
+  --color-accent: #2a3ffb;
+}
+
 .main {
   display: grid;
   grid-template-areas: 'stack';
@@ -31,4 +35,17 @@
 
 .main > * {
   grid-area: stack;
+}
+
+.bkg-overlay {
+  background: linear-gradient(270deg, var(--color-accent), #1b1b1b);
+  background-size: 400% 400%;
+
+  animation: overlay 31s ease infinite;
+}
+
+@keyframes overlay {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }

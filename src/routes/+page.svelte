@@ -15,7 +15,7 @@
     <source src="/videos/bkg-video.mp4" type="video/mp4" />
     <track kind="captions" />
   </video>
-  <div class="bg-accent w-full h-full mix-blend-overlay"></div>
+  <div class="bkg-overlay w-full h-full mix-blend-overlay"></div>
   <article
     class="profile grid grid-cols-5 bg-white shadow-2xl overflow-hidden rounded-md max-w-lg md:max-w-2xl lg:max-w-4xl z-10 m-6"
   >
@@ -65,7 +65,10 @@
             class="transition-all motion-reduce:transition-none motion-reduce:hover:transform-none"
           /></a
         >
-        <a href="https://tally.so/r/mYaWYv" class="text-accent hover:text-black"
+        <a
+          href="https://tally.so/r/mYaWYv"
+          target="_blank"
+          class="text-accent hover:text-black"
           ><Send
             strokeWidth={iconStrokeWidth}
             class="transition-all motion-reduce:transition-none motion-reduce:hover:transform-none"
@@ -88,6 +91,7 @@
         >
         <a
           href="https://tally.so/r/mYaWYv"
+          target="_blank"
           class="flex items-center gap-2 bg-zinc-800 hover:bg-black text-white rounded-sm px-4 py-2 transition motion-reduce:transition-none motion-reduce:hover:transform-none"
           ><Send strokeWidth={iconStrokeWidth} size={20} />
           Send me a message
