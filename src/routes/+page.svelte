@@ -15,6 +15,7 @@
     loop
     muted
     playsinline
+    poster="/images/bkg-video-poster.jpg"
     class="object-cover w-full h-full max-h-screen"
   >
     <source src="/videos/bkg-video.webm" type="video/webm" />
