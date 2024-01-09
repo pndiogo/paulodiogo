@@ -17,11 +17,11 @@
   "devDependencies": {
     "@playwright/test": "^1.40.1",
     "@sveltejs/adapter-static": "^3.0.1",
-    "@sveltejs/kit": "^2.0.6",
+    "@sveltejs/kit": "^2.1.0",
     "@sveltejs/vite-plugin-svelte": "^3.0.1",
     "@types/eslint": "8.56.1",
-    "@typescript-eslint/eslint-plugin": "^6.18.0",
-    "@typescript-eslint/parser": "^6.18.0",
+    "@typescript-eslint/eslint-plugin": "^6.18.1",
+    "@typescript-eslint/parser": "^6.18.1",
     "autoprefixer": "^10.4.16",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
@@ -40,6 +40,7 @@
   "type": "module",
   "dependencies": {
     "@vercel/analytics": "^1.1.1",
-    "lucide-svelte": "^0.306.0"
+    "@vercel/speed-insights": "^1.0.2",
+    "lucide-svelte": "^0.307.0"
   }
 }
