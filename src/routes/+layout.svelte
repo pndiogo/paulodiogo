@@ -5,7 +5,7 @@
   import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
 
   inject({ mode: dev ? 'development' : 'production' });
-  dev ? null : injectSpeedInsights();
+  injectSpeedInsights();
 </script>
 
 <slot />
